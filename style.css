@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #1C588C;
+    --secondary-color: #2E6CA9;
+    --accent-color: #CBD8E9;
+    --neutral-color: #7FB4E6;
+    --cta: #5693D2;
+}
+
+html {
+    font-style: 20px;
+}
+
+body {
+    background-image: url('image/bgc-wide.jpg');
+    background-color: contain;
+    background-repeat: no-repeat;
+}
+
+.app {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin: 0 20% 0 20%; */
+    background-color: rgba(256, 256, 256, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    height: 100vh;
+}
+
+.weather-display {
+    /* background-color: rgba(256, 256, 256, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); */
+    /* width: 60%; */
+    margin: 0% auto 0 auto;
+    padding: 1% 5% 2% 5%;
+    /* border: solid #000 2px; */
+    /* border-radius: 20px; */
+}
+
+.weather-display h1 {
+    font-size: 36px;
+    text-align: center;
+    margin: 2% 0
+}
+
+.weather-display h2 {
+    font-size: 30px;
+    text-align: center;
+    margin: 2% 0
+}
+
+.weather-display form {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+#city {
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-right: 1%;
+    border-radius: 20px;
+    border-style: none;
+}
+
+#city:focus {
+    outline: none;
+}
+
+#submit {
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+    margin-left: 1%;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--cta);
+    transition: background-color 200ms ease;
+}
+
+#submit:hover {
+    outline: none;
+    background-color:  var(--neutral-color);
+}
+
+.weather-item-container {
+    font-size: 1.5rem;
+    margin: 1.5rem 0 0 0;
+    padding: 3%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.weather-item {
+    border: 1px solid seagreen;
+    margin: 0 0.5% 0 0.5%;
+    padding: 1%;
+}
+
+.weather-img {
+    width: 5em;
+    height: 5em;
+    /* vertical-align: center; */
+    display: block;
+    margin: 5% auto;
+}
+
+.weather-condition {
+    text-align: center;
+    font-weight: bold;
+}
+
+.temp .min {
+    float: left;
+}
+
+.temp .max {
+    float: right;
+}
